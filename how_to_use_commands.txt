@@ -1,0 +1,24 @@
+naredba za kreiranje i pokretanje virtualnog okruženja
+
+python -m venv venv 
+.\venv\Scripts\activate #pokreće
+
+install dependencies
+
+pip install -r requirements.txt
+
+
+-- NAREDBA ZA POKRETANJE PROGRAMA ZA DETEKCIJU LJUDI I ORUŽJA NA VIDEU
+person_and_wepon_detection.py file -> yolov5 folder
+
+
+--video
+python yolov5\detect_humans_weapons.py --source "C:\Users\karlo\Desktop\video_survailance_project\video_test\test.mp4" --weights yolov5s.pt --img-size 640 --conf-thres 0.25 --iou-thres 0.45 --output "C:\Users\karlo\Desktop\video_survailance_project\video_test\"
+
+--webcam
+python detect_humans_weapons.py --source 0 --weights yolov5s.pt --img-size 640 --conf-thres 0.25 --iou-thres 0.45
+
+
+lokacija na kojoj se sprema anotirani video 
+
+C:\Users\karlo\Desktop\video_survailance_project\yolov5\output/output_video.avi
